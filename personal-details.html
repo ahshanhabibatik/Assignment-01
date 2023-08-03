@@ -1,0 +1,142 @@
+<!-- 4. Create a webpage to manage personal details like name, class, qualifications, photo, 
+address etc., using tables and other suitable HTML tags. Apply the following style 
+information:
+• Display the heading of the page in Times New Roman font and with 24px size.
+• Align all the field names like Name, Class, Photo etc. to right in the table.
+• Apply light blue as background color for the left side cells in the table which 
+contains field names like Name, Class etc...
+• Also display your college logo as background image in the top right position of the 
+web page. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Details</title>
+    <link rel="stylesheet" href="personal.css">
+
+</head>
+<style>
+    body {
+
+        margin: 0;
+        padding: 0;
+
+
+    }
+
+    h1 {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 24px;
+        text-align: center;
+        margin: 30px 0;
+    }
+
+    table {
+        width: 50%;
+        margin: 0 auto;
+        border-collapse: collapse;
+        border: 1px solid;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    }
+
+    th,
+    td {
+        padding: 10px;
+        text-align: right;
+        border-bottom: 1px solid #ccc;
+
+
+    }
+
+    th {
+        background-color: lightblue;
+    }
+
+    td {
+        background-color: #f2f2f2;
+
+    }
+
+    .input {
+        width: 300px;
+        padding: 10px;
+        border: 1px solid;
+        border-radius: 5px;
+    }
+
+    .logo {
+
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        width: 200px;
+        height: 200px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url("./logo-64fa6df59d79c574b53c5162ccbbb4cf3fb102f8e87eaf2fd204f03c8f0a526d.png");
+
+    }
+
+    .btn {
+        background-color: rgb(250, 85, 85);
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        color: rgb(239, 238, 236);
+    }
+
+    .btn:hover {
+        background-color: rgb(89, 85, 208);
+    }
+</style>
+
+<body>
+
+    <h1>Personal Details Management</h1>
+    <table>
+        <tr>
+            <th>Name:</th>
+            <td><input type="text" name="name" class="input"></td>
+        </tr>
+        <tr>
+            <th>Id</th>
+            <td><input type="text" name="name" class="input"></td>
+        </tr>
+
+        <tr>
+            <th>Class:</th>
+            <td><input type="text" name="class" class="input"></td>
+        </tr>
+        <tr>
+            <th>Date of Barth</th>
+            <td><input type="text" name="name" class="input"></td>
+        </tr>
+        <tr>
+            <th>Qualifications:</th>
+            <td><input type="text" name="Qualifications" class="input"></td>
+        </tr>
+        <tr>
+            <th>Photo:</th>
+            <td><input type="file" name="photo"></td>
+        </tr>
+        <tr>
+            <th>Address:</th>
+            <td><textarea name="address" rows="4" class="input"></textarea></td>
+        </tr>
+        <tr>
+            <th>
+                <button class="btn" type="submit">Submit Now</button>
+            </th>
+        </tr>
+
+
+    </table>
+    <div class="logo"></div>
+</body>
+
+</html>
